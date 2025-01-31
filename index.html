@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<htmnl>
+    <head>
+        <style>
+            button {
+                background-color: #b39c2a;
+                color: white;
+                padding: 15px 20px;
+                border: none;
+                border-radius: 10px;
+                font-size: 18px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            button:hover {
+                background-color: #6eb8c2;
+                transform: scale(1.1);
+            }
+            h2 {
+                background-color: rgb(240, 255, 194);
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 40px;
+            }
+            p {
+                background-color: rgb(254, 237, 186);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 30px;
+            }
+            body {
+                background-color: antiquewhite;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center>
+        <p>Click the button to evaluate/execute Javascript code/expressions.</p>
+        <button onclick="myFunction()">Click me!!</button>
+        <p id="result"></p>
+
+        <script>
+            function myFunction() {
+                var x = 5;
+                var y = 10;
+                var a = eval("x + y") + "<br>";
+                var b = eval("x * y") + "<br>";
+                var c = eval("x - y") + "<br>";
+                var d = eval("x / y") + "<br>";
+
+                var res = a + b + c + d;
+                document.getElementById("result").innerHTML = res;
+            }
+        </script>
+        </center>
+    </body>
+</htmnl>
